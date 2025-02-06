@@ -3,6 +3,8 @@
 ## Issues with the Original MobiFall Dataset
 The original MobiFall dataset contains sensor data from accelerometer, gyroscope, and orientation sensors. However, a major issue with the dataset is that the accelerometer data is not time-synchronized with the other sensors. This misalignment makes direct usage challenging for sequence-based models such as LSTMs. To address this, we applied linear interpolation to align the accelerometer data with timestamps from the gyroscope and orientation sensors, ensuring consistency across all three modalities.
 
+More details about the original dataset can be found at: [MobiFall Dataset Website](https://bmi.hmu.gr/the-mobifall-and-mobiact-datasets-2/)
+
 ## Combined Dataset Structure
 Each processed file contains synchronized data from the accelerometer, gyroscope, and orientation sensors, making it suitable for training machine learning models for activity recognition and fall detection.
 
@@ -54,4 +56,7 @@ timestamp(ns), acc_x, acc_y, acc_z, gyro_x, gyro_y, gyro_z, ori_azimuth, ori_pit
 | ori  | Orientation   | timestamp(ns), Azimuth, Pitch, Roll (°)  | Angle around the z, x, y axes.                                 |
 
 This dataset provides synchronized motion data, making it suitable for machine learning applications such as activity classification and fall detection.
+
+## Acknowledgment
+The development of the MobiFall dataset was partially funded by the FP7 project “MyHealthAvatar – A Demonstration of 4D Digital Avatar Infrastructure for Access of Complete Patient Information”.
 
