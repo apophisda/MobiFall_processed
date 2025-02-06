@@ -1,3 +1,5 @@
+you can download the mobiFall processed dataset by clicking [here](https://www.kaggle.com/datasets/arimaehiztaria/mobifall-processed/data)
+
 # MobiFall Dataset Processing - README
 
 ## Issues with the Original MobiFall Dataset
